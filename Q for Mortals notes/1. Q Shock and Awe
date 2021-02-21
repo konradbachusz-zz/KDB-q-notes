@@ -1,0 +1,66 @@
+/print "Well done!"
+"c"$0x57656c6c20646f6e6521
+
+/Declare a variable 
+a:42
+
+/Show variable
+show a:42
+
+/Assign a variable based on anther variable
+b:1+a:42 /43
+
+/Change date
+2000.01.01+5 /+5 days
+
+/Change time
+12:00:00.000000000+1000 /add 1000 nanoseconds
+
+/True
+1b
+
+/False
+0b
+
+/String: symbols in q
+`aapl
+
+/List
+(1; 1.2; `one)
+
+/Range: til
+til 10 /0 1 2 3 4 5 6 7 8 9
+1+til 10 /1 2 3 4 5 6 7 8 9 10
+1+2*til 10 /1 3 5 7 9 11 13 15 17 19
+
+/Join list 
+1 2 3,4 5 /1 2 3 4 5
+
+/List slicing
+2#til 10 /2 first items from the list
+-2#til 10 /2 last items from the list
+5# 1 2 3 /1 2 3 1 2 restarts at the beginning
+
+/Repeat items in a list
+5#`item /prints it out 5 times
+
+/Assign atoms to a list
+L:10 20 30
+
+/Accessing list items by index
+L[0]
+
+/Functions
+sq:{[x] x*x}
+sq[5] /25
+
+pyth:{[x;y] a:x*x; b:y*y; a+b}
+pyth[3;4] /25
+
+/prefix syntax function
+f:{x*x}
+f 5 /25
+
+/"Lambda like" function
+{x*x}[5] /25
+{x*x} 5
