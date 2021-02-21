@@ -61,6 +61,41 @@ pyth[3;4] /25
 f:{x*x}
 f 5 /25
 
+
 /"Lambda like" function
 {x*x}[5] /25
 {x*x} 5
+
+/Return larger number 
+42|98 /98
+
+/Return smaller number 
+42&98 /42
+
+/Max in list
+(|/) 20 10 40 30 /max can be used
+
+/Min in list
+(&/) 20 10 40 30 /min can be used
+
+/Product
+prd 2 2 /4
+
+/Fibonacci numbers
+10 {x,sum -2#x}/ 1 1
+
+/Square root
+sqrt(2)
+
+/Successive differences of a numeric list
+deltas 1 2 3 4 5 /1 1 1 1 1
+
+/Count items in list
+count (1 2 3; 10 20) /2
+count each (1 2 3; 10 20) /3 2
+
+/Dictionary
+`a`b`c!10 20 30
+
+/Get first row of a dictionary
+dc[;0]
