@@ -7,3 +7,5 @@ Kdb+ Download: https://kx.com/developers/download-licenses/
 
 
 Once downloaded run **~/q/l32/q** in terminal to open q console
+
+To exit the console type in the terminal **exit 0**
