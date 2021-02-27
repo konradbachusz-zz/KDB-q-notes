@@ -157,3 +157,21 @@ select max px-mins px from trades where sym=`aapl
 `string
 
 /atom!=string
+
+/save file as binary
+`:/home/konrad/q/l32/q4m/t set t
+
+/open saved file
+get `:/home/konrad/q/l32/q4m/t
+
+/Write txt file
+`:/home/konrad/q/l32/q4m/examples/life.txt 0: ("Meaning";"of";"life")
+
+/Read txt file
+read0 `:/home/konrad/q/l32/q4m/examples/life.txt
+
+/Save csv file
+`:/home/konrad/q/l32/q4m/examples/t.csv 0: csv 0: t
+
+/Read csv with "," separator
+("SF"; enlist ",") 0: `:/home/konrad/q/l32/q4m/examples/t.csv
