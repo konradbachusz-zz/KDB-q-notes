@@ -106,4 +106,21 @@ t:flip `c1`c2!(10 20 30; 1.1 2.2 3.3)  /example
 
 /table
 flip `c1`c2!(10 20 30; 1.1 2.2 3.3)
+([] c1:10 20 30; c2:1.1 2.2 3.3) /other syntax
+
+/q-sql select *
+select from t
+
+/operations on columns
+select c1, val:2*c3 from t /Equivalent to SELECT c1, (c3*2) as VAL FROM t
+
+/Table aggregations
+select count c1, sum c3 by c2 from t
+
+/Grouping a computed column
+select count c2 by ovrund:c3<=40 from t
+
+/Update statement
+update c3:10*c3 from t where c2=`a
+
 
