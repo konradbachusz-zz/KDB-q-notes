@@ -99,3 +99,11 @@ count each (1 2 3; 10 20) /3 2
 
 /Get first row of a dictionary
 dc[;0]
+
+/transpose
+flip
+t:flip `c1`c2!(10 20 30; 1.1 2.2 3.3)  /example
+
+/table
+flip `c1`c2!(10 20 30; 1.1 2.2 3.3)
+
