@@ -175,3 +175,10 @@ read0 `:/home/konrad/q/l32/q4m/examples/life.txt
 
 /Read csv with "," separator
 ("SF"; enlist ",") 0: `:/home/konrad/q/l32/q4m/examples/t.csv
+
+//Negative number
+neg(1)
+
+//Sum
+sum(1,3)
+
