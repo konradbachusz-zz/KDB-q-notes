@@ -1,0 +1,30 @@
+//Booleans can be multiploed by
+q)flag:1b
+q)base:100
+q)base+flag*42
+142
+
+//GUID (globally unique identifier) 
+1?0Ng //,8c6b8b64-6815-6084-0a3e-178401251b68, the int at the beginning indicates the number of guids
+
+/Importing a guid
+"G"$"61f35174-90bc-a48a-d88f-e15e4a377ec8"
+
+/Create guid from a list of 16 bytes
+0x0 sv 16?0xff
+
+/Symbol with blanks
+`$"A symbol with blanks and `"
+
+/Convert date to int
+`int$2000.02.01 /31i
+
+/Convert time to int
+`int$12:00:00.000
+
+/Extract date
+`date$2000.01.02T12:00:00.000
+
+/Extract time
+`time$2000.01.02T12:00:00.000
+
