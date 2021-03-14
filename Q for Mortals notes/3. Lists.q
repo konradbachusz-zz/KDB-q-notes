@@ -28,3 +28,12 @@ L1^L2 /100 200 30
 
 /Nested list
 L2:((1;2;3);(`ab;`c))
+
+/“rectangular” list. 3x4 matrix
+((11; 12; 13; 14); (21; 22; 23; 24); (31; 32; 33; 34))
+
+/Retreive multiple items from list
+L[0 2]
+
+/Return index of an item in a list
+1001 1002 1003?1002 /1
