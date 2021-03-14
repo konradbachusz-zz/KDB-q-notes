@@ -37,3 +37,6 @@ L[0 2]
 
 /Return index of an item in a list
 1001 1002 1003?1002 /1
+
+/Remove duplicates from list
+distinct 1 2 3 2 3 4 6 4 3 5 6
