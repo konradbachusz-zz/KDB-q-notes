@@ -40,3 +40,7 @@ L[0 2]
 
 /Remove duplicates from list
 distinct 1 2 3 2 3 4 6 4 3 5 6
+
+/Where condition
+L:10 20 30 40 50
+L[where L>20]
